@@ -19,7 +19,7 @@ export default function (props: LayoutProps) {
         <Navbar>
           <Link to="/" className="brand">CPS Test</Link>
           <Links>{links}</Links>
-          <a href="https:/github.com/OhBeomho/cps-test" target="_blank">
+          <a href="https://github.com/OhBeomho/cps-test" target="_blank">
             GitHub
           </a>
         </Navbar>
