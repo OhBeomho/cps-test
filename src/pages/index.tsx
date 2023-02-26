@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import ClickBox from "../components/ClickBox"
 
 export default function (props: PageProps) {
-  const time = Number(new URL(props.location.href).searchParams.get("t") || 5)
+  const time = Number(new URLSearchParams(props.location.search).get("t") || 5)
 
   return (
     <Layout>
@@ -15,4 +15,4 @@ export default function (props: PageProps) {
   )
 }
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const Head: HeadFC = () => <title>CPS Test</title>
